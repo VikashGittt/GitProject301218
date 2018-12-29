@@ -1,1 +1,18 @@
 This is 1st line in testfile3.txt
+
+what is workflow: QA Shaheen Git Tutorial3 -between 1 to 4 minute
+$ git diff testfile2.txt
+$ git diff --staged testfile3.txt
+abcde
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   testfile3.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   testfile3.txt
