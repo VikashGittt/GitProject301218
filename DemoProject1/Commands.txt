@@ -1,4 +1,7 @@
-$ git commit -am "commiting files alltogether".   -- commits mult/.iple file together
+=========================
+branching + merging + Conflict handle commands
+=========================
+$ git commit -am "commiting files alltogether".   -- commits multiple file together
 $ git branch demobranch1
 $ git branch
 $ git checkout demobranch1
@@ -13,6 +16,78 @@ $ git branch -v  -- shgow all the brancches as well as last commit
 $  git diff master..demobranch
 Renaming current branch
 $ git branch -m demoBranch011
+=========================
+Revert commands
+=========================
+$ git checkout 41df1ac33c -- testfile4.txt
+$ git commit -m "Reverting changes in testfile4.txt  @ 2:55PM"
+
+or
+$ git checkout 41df1ac33c -- testfile4.txt
+$ git reset HEAD testfile4.txt
+$ git add .
+$ git commit -m "Reverting changes in testfile4.txt  @ 2:55PM"
+
+$ git revert HEAD
+
+$ git reset aCommit
+$ git reset --hard xx - bad practice [To Pract]
+$ git reset --hard aCommit
+
+
+undo the changes in staged
+
+[First delete the file from stage] === $ git rm --cached README.txt or $ git rm -f README.txt
+
+[Then reset the file] === $ git reset HEAD README.txt
+[Then checkout the file] === $ git checkout README.txt
+
+or
+[reset the file to unstage it] === $ git reset HEAD README.txt
+[Then checkout the file] === $ git checkout README.txt
+
+============================>>>>>How to undo the changes in local file ================= G:\QA\Tutorials\GIT&GITHUB\Git1\3\Reverting.txt
+============================>>>>>How to undo the changes from repository local file ================= G:\QA\Tutorials\GIT&GITHUB\Git1\3\Reverting.txt
+============
+
+============
+$ git rm --cached Project1
+If rename made on local then---$ git mv text04.txt test04.txt
+
+$ git mv Project2/Testt01.txt Project1/Testt01.txt
+
+If rename made on Repository then on status it shows renamed
+ $ git mv text04.txt test04.txt
+$ git commit -m "commiting test04.txt @5.19pm"
+
+$ git commit -a
+[o/p - this command opens editor to mention comment]
+
+[Delete the file]
+$ git rm --cached README.txt or $ git rm -f README.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
