@@ -1,2 +1,19 @@
 $ git commit -am "commiting files alltogether".   -- commits mult/.iple file together
-helloo
+$ git branch demobranch1
+$ git branch
+$ git checkout demobranch1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
