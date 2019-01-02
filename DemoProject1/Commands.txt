@@ -2,10 +2,9 @@ $ git commit -am "commiting files alltogether".   -- commits mult/.iple file tog
 $ git branch demobranch1
 $ git branch
 $ git checkout demobranch1
-$ git merge master
-
-
-
+$ git merge demobranch1 -- merge
+$ git branch -D demobranch1 -- Deleted branch demobranch1 (was f0bcca0).
+$ git checkout -b demobranch1
 
 
 
