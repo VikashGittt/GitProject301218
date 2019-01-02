@@ -96,7 +96,7 @@ stash@{1}: WIP on master: 899bf5e comiting command.txt@ 3:54am
 
 
 $ git stash list -p
-
+$ git stash apply  -- commit latest stash
 
 
 
