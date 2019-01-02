@@ -4,12 +4,13 @@ $ git branch
 $ git checkout demobranch1
 $ git merge demobranch1 -- merge
 $ git branch -D demobranch1 -- Deleted branch demobranch1 (was f0bcca0).
+$ git branch -d demobranch1 -- Delete unmerged branch 
 $ git checkout -b demobranch1
-
-
-
-
-
+$ git fetch -b demobranch1  ??????????
+$ git branch --merged
+$ git branch --no-merged
+$ git branch -v  -- shgow all the brancches as well as last commit
+$  git diff master..demobranch
 
 
 
