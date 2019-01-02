@@ -1,12 +1,10 @@
 Hello This is first line in testfile4.txt
 bbbbbbb
 zzzzzzz
-Sentence1
+Sentence11
 Sentence2
 Sentence3
 Sentence4
-
 Sentence5
-
 Sentence6
 
