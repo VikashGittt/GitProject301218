@@ -18,3 +18,4 @@ Changes not staged for commit:
         modified:   testfile3.txt
 $ git status
 $ git status
+aaaaaaa
