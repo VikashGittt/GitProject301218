@@ -11,7 +11,8 @@ $ git branch --merged
 $ git branch --no-merged
 $ git branch -v  -- shgow all the brancches as well as last commit
 $  git diff master..demobranch
-
+Renaming current branch
+$ git branch -m demoBranch011
 
 
 
