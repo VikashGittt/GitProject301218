@@ -1,0 +1,2 @@
+$ git commit -am "commiting files alltogether".   -- commits mult/.iple file together
+helloo
