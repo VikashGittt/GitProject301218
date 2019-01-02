@@ -19,3 +19,4 @@ Changes not staged for commit:
 $ git status
 $ git status
 aaaaaaa
+zzzzzzz
