@@ -49,7 +49,7 @@ or
 ============================>>>>>How to undo the changes in local file ================= G:\QA\Tutorials\GIT&GITHUB\Git1\3\Reverting.txt
 ============================>>>>>How to undo the changes from repository local file ================= G:\QA\Tutorials\GIT&GITHUB\Git1\3\Reverting.txt
 ============
-
+Move
 ============
 $ git rm --cached Project1
 If rename made on local then---$ git mv text04.txt test04.txt
@@ -66,13 +66,17 @@ $ git commit -a
 [Delete the file]
 $ git rm --cached README.txt or $ git rm -f README.txt
 
+============
+Detached
+============
+$ git checkout 40957bc75bf9
+$ git branch stage
+$ git checkout stage
+$ git checkout master
 
-
-
-
-
-
-
+============
+Stash
+============
 
 
 
