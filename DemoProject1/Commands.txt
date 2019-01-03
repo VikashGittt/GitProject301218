@@ -1,3 +1,8 @@
+ls -ls
+rm -rf
+
+
+
 =========================
 branching + merging + Conflict handle commands
 =========================
