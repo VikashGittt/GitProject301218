@@ -117,6 +117,8 @@ push an existing repository from the command line
 git remote add origin https://github.com/VikashGittt/GitProject301218.git
 git push -u origin master
 
+Note: cross branch push not happening may be expected. for example checkout to sgate branch inlocal and push the repo to master branch in repo
+
 
 
 
