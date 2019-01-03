@@ -1,8 +1,9 @@
 ls -ls
 rm -rf
+git add -A  -- add everything to staging area
 
-
-
+git remote -v
+git branch -a
 =========================
 branching + merging + Conflict handle commands
 =========================
