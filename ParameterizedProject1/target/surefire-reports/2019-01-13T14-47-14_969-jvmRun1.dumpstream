@@ -1,0 +1,53 @@
+# Created on 2019-01-13T14:47:51.416
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2019-01-13T14:47:51.802
+Unexpected IOException with stream: *******Registration page is in display*******
+
+
+# Created on 2019-01-13T14:47:51.802
+Unexpected IOException with stream: validatePageHeading_RP Get Started
+
+
+# Created on 2019-01-13T14:47:51.804
+Unexpected IOException: 5,1,com.a3hp.automationpracticee.framework.test.createaccountandlogin.RegistrationTest,validatePageHeading_RP(com.a3hp.automationpracticee.framework.test.createaccountandlogin.RegistrationTest),txt\002Ccreateaccountandlogin\002CLow\002CRegistrationpage_txt,null,null
+
+
+# Created on 2019-01-13T14:47:51.805
+Unexpected IOException with stream: In validatePageHeading_RP Method
+
+
+# Created on 2019-01-13T14:47:51.805
+Unexpected IOException with stream: In gm_getActualText method
+
+
+# Created on 2019-01-13T14:47:51.865
+Unexpected IOException with stream: element.isDisplayed() --> true
+
+
+# Created on 2019-01-13T14:47:51.900
+Unexpected IOException with stream: ActualText = CREATE AN ACCOUNT
+
+
+# Created on 2019-01-13T14:47:51.900
+Unexpected IOException with stream: lastArrItem: txt
+
+
+# Created on 2019-01-13T14:47:51.901
+Unexpected IOException with stream: screenshotName-->>>>RegistrationPage_PageHeading_txt
+
+
+# Created on 2019-01-13T14:47:51.901
+Unexpected IOException with stream: In gm_TakeSnapshot Method
+
+
+# Created on 2019-01-13T14:47:51.902
+Unexpected IOException with stream: 11111111
+
+

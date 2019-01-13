@@ -1,0 +1,269 @@
+<html>
+<head>
+<title>TestNG:  FFTest2-HomepageTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>FFTest2-HomepageTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jan 12 23:34:04 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>222 seconds (222573 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>txt smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.a3hp.automationpracticee.framework.test.homepage.HomepageTest.getBrowser()'><b>getBrowser</b><br>Test class: com.a3hp.automationpracticee.framework.test.homepage.HomepageTest<br>Parameters: FF, http://automationpractice.com/index.php, WINDOWS</td>
+<td><div><pre>java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3332)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:124)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:448)
+	at java.lang.StringBuffer.append(StringBuffer.java:270)
+	at java.io.StringWriter.write(StringWriter.java:112)
+	at com.google.gson.stream.JsonWriter.string(JsonWriter.java:591)
+	at com.google.gson.stream.JsonWriter.writeDeferredName(JsonWriter.java:402)
+	at com.google.gson.stream.JsonWriter.value(JsonWriter.java:465)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:743)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:759)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:697)
+	at com.google.gson.internal.Streams.write(Streams.java:72)
+	at com.google.gson.Gson.toJson(Gson.java:745)
+	at com.google.gson.Gson.toJson(Gson.java:703)
+	at com.google.gson.Gson.toJson(Gson.java:688)
+	at org.openqa.selenium.json.BeanToJsonConverter.convert(BeanToJsonConverter.java:140)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:53)
+	at org.openqa.selenium.remote.NewSessionPayload.writeTo(NewSessionPayload.java:236)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:69)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.getFirefoxDriver(UI_GenericMethods1.java:352)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.gm_LaunchBrowser(UI_GenericMethods1.java:195)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.gm_OpenApp(UI_GenericMethods1.java:234)
+	at com.a3hp.automationpracticee.framework.test.homepage.HomepageTest.getBrowser(HomepageTest.java:58)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace128042865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace128042865'><pre>java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3332)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:124)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:448)
+	at java.lang.StringBuffer.append(StringBuffer.java:270)
+	at java.io.StringWriter.write(StringWriter.java:112)
+	at com.google.gson.stream.JsonWriter.string(JsonWriter.java:591)
+	at com.google.gson.stream.JsonWriter.writeDeferredName(JsonWriter.java:402)
+	at com.google.gson.stream.JsonWriter.value(JsonWriter.java:465)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:743)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:759)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:697)
+	at com.google.gson.internal.Streams.write(Streams.java:72)
+	at com.google.gson.Gson.toJson(Gson.java:745)
+	at com.google.gson.Gson.toJson(Gson.java:703)
+	at com.google.gson.Gson.toJson(Gson.java:688)
+	at org.openqa.selenium.json.BeanToJsonConverter.convert(BeanToJsonConverter.java:140)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:53)
+	at org.openqa.selenium.remote.NewSessionPayload.writeTo(NewSessionPayload.java:236)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:69)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.getFirefoxDriver(UI_GenericMethods1.java:352)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.gm_LaunchBrowser(UI_GenericMethods1.java:195)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.gm_OpenApp(UI_GenericMethods1.java:234)
+	at com.a3hp.automationpracticee.framework.test.homepage.HomepageTest.getBrowser(HomepageTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</pre></div></td>
+<td>22</td>
+<td>com.a3hp.automationpracticee.framework.test.homepage.HomepageTest@5fdba6f9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.a3hp.automationpracticee.framework.test.homepage.HomepageTest.validateHeaderSignInLink_HP()'><b>validateHeaderSignInLink_HP</b><br>Test class: com.a3hp.automationpracticee.framework.test.homepage.HomepageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.a3hp.automationpracticee.framework.helper.TestBase.ListenersInSelenium.onTestSkipped(ListenersInSelenium.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace521675316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace521675316'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.a3hp.automationpracticee.framework.helper.TestBase.ListenersInSelenium.onTestSkipped(ListenersInSelenium.java:99)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>22</td>
+<td>com.a3hp.automationpracticee.framework.test.homepage.HomepageTest@5fdba6f9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.a3hp.automationpracticee.framework.test.homepage.HomepageTest.validateHeaderSignInLink_HP()'><b>validateHeaderSignInLink_HP</b><br>Test class: com.a3hp.automationpracticee.framework.test.homepage.HomepageTest</td>
+<td><div><pre>java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3332)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:124)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:448)
+	at java.lang.StringBuffer.append(StringBuffer.java:270)
+	at java.io.StringWriter.write(StringWriter.java:112)
+	at com.google.gson.stream.JsonWriter.string(JsonWriter.java:591)
+	at com.google.gson.stream.JsonWriter.writeDeferredName(JsonWriter.java:402)
+	at com.google.gson.stream.JsonWriter.value(JsonWriter.java:465)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:743)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:759)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:697)
+	at com.google.gson.internal.Streams.write(Streams.java:72)
+	at com.google.gson.Gson.toJson(Gson.java:745)
+	at com.google.gson.Gson.toJson(Gson.java:703)
+	at com.google.gson.Gson.toJson(Gson.java:688)
+	at org.openqa.selenium.json.BeanToJsonConverter.convert(BeanToJsonConverter.java:140)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:53)
+	at org.openqa.selenium.remote.NewSessionPayload.writeTo(NewSessionPayload.java:236)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:69)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.getFirefoxDriver(UI_GenericMethods1.java:352)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.gm_LaunchBrowser(UI_GenericMethods1.java:195)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.gm_OpenApp(UI_GenericMethods1.java:234)
+	at com.a3hp.automationpracticee.framework.test.homepage.HomepageTest.getBrowser(HomepageTest.java:58)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1906605841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1906605841'><pre>java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3332)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:124)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:448)
+	at java.lang.StringBuffer.append(StringBuffer.java:270)
+	at java.io.StringWriter.write(StringWriter.java:112)
+	at com.google.gson.stream.JsonWriter.string(JsonWriter.java:591)
+	at com.google.gson.stream.JsonWriter.writeDeferredName(JsonWriter.java:402)
+	at com.google.gson.stream.JsonWriter.value(JsonWriter.java:465)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:743)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:759)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:697)
+	at com.google.gson.internal.Streams.write(Streams.java:72)
+	at com.google.gson.Gson.toJson(Gson.java:745)
+	at com.google.gson.Gson.toJson(Gson.java:703)
+	at com.google.gson.Gson.toJson(Gson.java:688)
+	at org.openqa.selenium.json.BeanToJsonConverter.convert(BeanToJsonConverter.java:140)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:53)
+	at org.openqa.selenium.remote.NewSessionPayload.writeTo(NewSessionPayload.java:236)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:69)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.getFirefoxDriver(UI_GenericMethods1.java:352)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.gm_LaunchBrowser(UI_GenericMethods1.java:195)
+	at com.a3hp.automationpracticee.framework.genericclasses.UI_GenericMethods1.gm_OpenApp(UI_GenericMethods1.java:234)
+	at com.a3hp.automationpracticee.framework.test.homepage.HomepageTest.getBrowser(HomepageTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</pre></div></td>
+<td>0</td>
+<td>com.a3hp.automationpracticee.framework.test.homepage.HomepageTest@5fdba6f9</td></tr>
+</table><p>
+</body>
+</html>
